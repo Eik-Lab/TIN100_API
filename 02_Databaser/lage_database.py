@@ -4,7 +4,7 @@ from sqlite3 import Error
 connection = sqlite3.connect("database.db") # 
 
 if connection is not None: # Sjekker om opprettelsen av databasen var en suksess
-    sql_create_table =  "CREATE TABLE IF NOT EXISTS sensordata (id integer PRIMARY KEY, value integer NOT NULL); "
+    sql_create_table =  "CREATE TABLE IF NOT EXISTS sensordata (id integer PRIMARY KEY, value real NOT NULL); "
     try:
         c = connection.cursor()
         c.execute(sql_create_table)
