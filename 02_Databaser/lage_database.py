@@ -12,9 +12,5 @@ if connection is not None: # Sjekker om opprettelsen av databasen var en suksess
         print(e)
 
 
-else:
-    print("En feil oppsto under opprettelsen av databasen")
-
-
 
 connection.close() # Viktig å lukke databasen før programmet avslutter
