@@ -14,4 +14,7 @@ Hvordan man kan hente ut og plassere data i en database enkelt med Python og SQL
 ## Forelesning 3
 
 Introduksjon til utvikling av API-er ved bruk av Python og Flask. 
+
+## Forelesning 4
+Sette sammen alt til å lage en API med mulighet til å sette inn data, hente ut data og oppdatere data
     
