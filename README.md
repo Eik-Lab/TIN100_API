@@ -1,4 +1,4 @@
-# TIP160_API
+# TIN100
 
 Dette repositeriet inneholder eksempler på hvordan man kan bruke og lage API-er med Python. Det tar også for seg hvordan man kan gjøre en API i produksjon med autentisering.
 
