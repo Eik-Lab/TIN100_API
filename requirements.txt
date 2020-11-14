@@ -2,3 +2,4 @@ pysqlite3
 requests
 scipy
 matplotlib
+flask
