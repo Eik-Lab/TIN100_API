@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "07d63c4f-fec9-438d-bf07-1664d47c3e18",
+		"name": "TIN100",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tilfeldig tall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"walk dog\",\r\n  \"isComplete\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/paamelding",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"paamelding"
+					],
+					"query": [
+						{
+							"key": "n_forste",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Påmelding",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/paamelding?navn=Jørgen",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"paamelding"
+					],
+					"query": [
+						{
+							"key": "navn",
+							"value": "Jørgen"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hente påmeldte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
