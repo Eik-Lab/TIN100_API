@@ -18,3 +18,10 @@ Introduksjon til utvikling av API-er ved bruk av Python og Flask.
 ## Forelesning 4
 Sette sammen alt til å lage en API med mulighet til å sette inn data, hente ut data og oppdatere data
     
+# Krav
+1. Python 3
+2. Noen tilleggspakker for å kjøre eksemplene. 
+    Skriv inn følgende kommando i terminalen/cmd for å installere tilleggspakker
+```console
+pip install -r requirements.txt
+```
