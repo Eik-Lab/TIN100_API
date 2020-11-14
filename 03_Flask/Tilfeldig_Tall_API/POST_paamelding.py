@@ -19,4 +19,4 @@ def paamelding():
 app.run(debug=True)
 
 
-# http://127.0.0.1:5000/?start=3&end=10
+# http://127.0.0.1:5000/paamelding?navn=Jørgen
