@@ -8,7 +8,7 @@ app = flask.Flask(__name__) #
 paameldte = [] # "Databasen" vår som lagrer påmeldte
 
 
-@app.route('/paamelding', methods=['GET', 'POST'])
+@app.route('/paamelding', methods=['GET', 'POST']) # Dette endepunktet kan ta imot både GET og POST-requester
 def paamelding():
     if request.method == 'POST':
         navn = request.args["navn"]
@@ -18,7 +18,7 @@ def paamelding():
     elif request.method == 'GET':
         return jsonify(paameldte)
 
-app.run(debug=True)
+app.run(debug=True) # Starter applikasjonen på port 5000
 
 
 # http://127.0.0.1:5000/paamelding
