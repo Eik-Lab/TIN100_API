@@ -21,7 +21,9 @@ Sette sammen alt til å lage en API med mulighet til å sette inn data, hente ut
 # Krav
 1. Python 3
 2. Noen tilleggspakker for å kjøre eksemplene. 
-    Skriv inn følgende kommando i terminalen/cmd for å installere tilleggspakker
+    Skriv inn følgende kommando i terminalen/cmd for å installere tilleggspakker. Evt. lag et eget environment i anaconda først. 
 ```console
 pip install -r requirements.txt
 ```
+
+3. [Postman](https://www.postman.com/) for å teste API-endepunkter uten kode. 
