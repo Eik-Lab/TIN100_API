@@ -16,7 +16,6 @@ def insert():
     """Endepunkt for å motta data fra en sensor
     """
 
-
     with sqlite3.connect('sensordata.db') as con:
         # Slipper å lukke databasen manuelt med denne syntaksen
         c = con.cursor()
@@ -33,6 +32,7 @@ def insert():
 
     return 200, "suksess"
 
+
 @app.route('/get_all', methods=["GET"])
 def get_all():
     """Endepunkt for å hente all data ut fra databasen 
@@ -48,6 +48,7 @@ def get_all():
         print(rows)
 
         return jsonify(rows)
+
 
 @app.route('/get_value', methods=["GET"])
 def get_value():
@@ -69,5 +70,6 @@ def get_value():
             abort(404, "")
         else:
             return jsonify(rows)
+
 
 app.run(debug=True)
