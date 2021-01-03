@@ -1,6 +1,8 @@
 import sqlite3
 from sqlite3 import Error
 
+import random, time
+
 
 def open_database(db_navn):
 
@@ -19,3 +21,18 @@ def open_database(db_navn):
 
 if __name__ == '__main__':
     db = open_database('sensordata.db')
+
+    # Setter inn ekseempeldata
+    c = db.cursor()
+    value = random.randint(0, 30)
+    date = time.time()
+
+    for _ in range(10):
+        value = random.randint(0, 30)
+        date = time.time()
+
+        sql_insert = f'INSERT INTO sensordata (value, date) VALUES ({value}, {date})'
+        print(sql_insert)
+        c.execute(sql_insert)
+        
+    db.commit()
