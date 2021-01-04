@@ -5,10 +5,11 @@ import random
 
 connection = sqlite3.connect("database.db") # Kobler til databasen vi opprettet i 1_lage_database.py
 
-sql_insert = "INSERT INTO sensordata (value) VALUES (0.7)" # Eksempel på kommando for å sette inn data
+sql_insert = "INSERT INTO sensordata (value) VALUES (0.9)" # Eksempel på kommando for å sette inn data
 
 c = connection.cursor()
 c.execute(sql_insert) # Utfører kommanoen
+connection.commit()
 
 
 # Setter inn flere rader med en for-løkke
